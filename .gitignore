@@ -1,0 +1,13 @@
+# Final Product Files
+config.json
+
+# Folders
+node_modules
+dist
+
+# Dot files
+.env
+.eslintcache
+
+# TypeScript
+.tsbuildinfo

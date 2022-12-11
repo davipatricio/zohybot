@@ -1,0 +1,33 @@
+{
+  "name": "@zohybot/bot",
+  "version": "0.0.1",
+  "description": "Zohy is a open source Discord bot.",
+  "private": true,
+  "scripts": {
+    "build": "pnpm tsc",
+    "postbuild": "node scripts/copyEnv.js",
+    "typecheck": "pnpm tsc --noEmit",
+    "start": "cd src && node sharding/shard.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davipatricio/zohybot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davipatricio/zohybot/issues"
+  },
+  "_moduleAliases": {
+    "@bot": "../bot"
+  },
+  "homepage": "https://github.com/davipatricio/zohybot/tree/main/packages/zohybot#readme",
+  "author": "Davi Patricio <davipatricio@pm.me>",
+  "license": "MIT",
+  "packageManager": "pnpm@7.18.0",
+  "devDependencies": {
+    "@types/module-alias": "2.0.1"
+  },
+  "dependencies": {
+    "discord.js": "14.7.1",
+    "module-alias": "2.2.2"
+  }
+}

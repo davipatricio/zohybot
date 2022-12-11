@@ -1,0 +1,17 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": "../",
+        "paths": {
+            "@bot": [
+                "./bot"
+            ],
+            "@bot/*": [
+                "./bot/*"
+            ],
+        }
+    },
+    "exclude": [
+        "tsconfig.json"
+    ]
+}
